@@ -132,7 +132,7 @@
         
         .achievements-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
             gap: 20px;
             margin: 20px 0;
         }
@@ -159,7 +159,7 @@
         
         .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
             gap: 20px;
         }
         
@@ -497,6 +497,19 @@
         .achievement-card h3 { font-size: 1.2rem; }
         .achievement-card p { text-align: left; font-size: 0.95rem; }
         .achievement-card .demo-link { background: rgba(255,255,255,0.2); padding: 8px 16px; margin: 12px 6px 0 0; font-size: 0.9rem; }
+        .offers { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 20px; margin-top: 20px; }
+        .offer { background: #f8f9fa; border-radius: 12px; border-top: 4px solid #2c5aa0; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+        .offer-head h3 { color: #2c5aa0; font-size: 1.2rem; margin-bottom: 6px; }
+        .offer-price { font-size: 1.6rem; font-weight: 700; color: #1a1a2e; }
+        .offer-price span { font-size: 0.9rem; font-weight: 400; color: #666; }
+        .offer-for { color: #444; }
+        .offer-list { padding-left: 20px; display: grid; gap: 6px; color: #333; }
+        .offer-proof { font-size: 0.9rem; color: #555; font-style: italic; }
+        .offer-cta { margin-top: auto; align-self: flex-start; background: #2c5aa0; color: #fff; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: 600; }
+        .offer-cta:hover { background: #1e3f73; }
+        .offer-sub { color: #2c5aa0; margin: 28px 0 10px; font-size: 1.1rem; }
+        .offer-steps { padding-left: 22px; display: grid; gap: 8px; color: #333; }
+        .faq { display: grid; gap: 10px; color: #333; }
     </style>
 </head>
 <body>
@@ -504,11 +517,12 @@
         <!-- Hero Section -->
         <div class="hero">
             <h1><i class="fas fa-cloud"></i> ABDIHAKIM SAID</h1>
-            <div class="subtitle">Cloud &amp; Platform Engineer · Founder, Human Layer AI Ltd</div>
+            <div class="subtitle">Cloud &amp; Platform Engineer · Founder, HumanLayer AI Ltd</div>
             <div class="contact-links">
                 <a href="mailto:abdihakimsaid1@gmail.com"><i class="fas fa-envelope"></i> Email</a>
                 <a href="https://www.linkedin.com/in/said-devops/"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 <a href="https://github.com/abdihakim-said"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#work-with-me"><i class="fas fa-handshake"></i> Work with me</a>
                 <a href="./cv.html" target="_blank"><i class="fas fa-file-alt"></i> View CV</a>
             </div>
         </div>
@@ -521,6 +535,63 @@
         <div class="section">
             <h2><i class="fas fa-user"></i> What I Do</h2>
             <p>I help teams run secure, reliable and cost-efficient platforms on AWS and Azure: Terraform, Kubernetes and GitOps, DevSecOps pipelines, SRE practice, and bringing AI into operations with guardrails that don't depend on the AI.</p>
+        </div>
+
+        <!-- Work With Me -->
+        <div class="section" id="work-with-me">
+            <h2><i class="fas fa-handshake"></i> Work With Me</h2>
+            <p>Two fixed-price reviews. Clear scope, a written report you keep, and read-only access only. I never change anything in your accounts.</p>
+
+            <div class="offers">
+                <div class="offer">
+                    <div class="offer-head">
+                        <h3><i class="fab fa-aws"></i> AWS Cost &amp; Reliability Review</h3>
+                        <div class="offer-price">£2,950 <span>fixed · 2 weeks</span></div>
+                    </div>
+                    <p class="offer-for"><strong>For</strong> teams spending £5k–£100k a month on AWS who suspect waste, or who have had outages they shouldn't have.</p>
+                    <ul class="offer-list">
+                        <li>Cost breakdown by service, team and environment</li>
+                        <li>Top 10 savings, ranked by effort and risk, with estimated £ impact: right-sizing, scheduling, storage, Savings Plans</li>
+                        <li>Reliability check: single points of failure, backups nobody has restored, alerts that don't reflect user impact</li>
+                        <li>Written report, 60-minute walkthrough with your team, and a follow-up call after 30 days</li>
+                    </ul>
+                    <p class="offer-proof">Background: cut AWS costs by 63% at Moorfields Private Eye Hospital while keeping patient-facing systems at 99.95% uptime.</p>
+                    <a class="offer-cta" href="mailto:abdihakimsaid1@gmail.com?subject=AWS%20Cost%20%26%20Reliability%20Review">Book a free 30-minute call</a>
+                </div>
+
+                <div class="offer">
+                    <div class="offer-head">
+                        <h3><i class="fas fa-robot"></i> AI Spend &amp; Guardrails Review</h3>
+                        <div class="offer-price">£3,450 <span>fixed · 2 weeks</span></div>
+                    </div>
+                    <p class="offer-for"><strong>For</strong> teams using OpenAI, Anthropic, Bedrock or Azure OpenAI in production, or giving AI agents access to internal systems.</p>
+                    <ul class="offer-list">
+                        <li><strong>Where the money goes:</strong> spend per feature, team and model, and the 3–5 changes that cut it (model routing, caching, token limits)</li>
+                        <li><strong>What data leaves:</strong> what is sent to which provider, where it's processed and what gets logged, from a UK GDPR point of view</li>
+                        <li><strong>What your agents can touch:</strong> permissions of API keys, MCP servers and agent tools, and your exposure to prompt injection</li>
+                        <li><strong>How you'll see it:</strong> an observability plan with cost and latency per call (OpenTelemetry) and budget alerts</li>
+                        <li>Written report, prioritised fixes, 60-minute walkthrough and a follow-up call after 30 days</li>
+                    </ul>
+                    <p class="offer-proof">Approach: LLMs can draft; deterministic controls decide. See my <a href="https://github.com/abdihakim-said/cloudmart-enterprise-iam-automation" target="_blank">AI-assisted IAM prototype</a>.</p>
+                    <a class="offer-cta" href="mailto:abdihakimsaid1@gmail.com?subject=AI%20Spend%20%26%20Guardrails%20Review">Book a free 30-minute call</a>
+                </div>
+            </div>
+
+            <h3 class="offer-sub">How it works</h3>
+            <ol class="offer-steps">
+                <li><strong>Free 30-minute call.</strong> We check the review fits your situation. If it doesn't, I'll say so.</li>
+                <li><strong>Scope in writing.</strong> A one-page scope and a fixed price before any work starts.</li>
+                <li><strong>Two weeks of work.</strong> Week 1: read-only access and short interviews. Week 2: analysis and report.</li>
+                <li><strong>Walkthrough and handover.</strong> You keep the report and can act on it with or without me.</li>
+            </ol>
+
+            <h3 class="offer-sub">Questions</h3>
+            <div class="faq">
+                <p><strong>What access do you need?</strong> A read-only role. For AWS I provide the template to create it, and you can remove it the day the review ends.</p>
+                <p><strong>Can you implement the fixes?</strong> Yes, as a separate piece of work once you've seen the report. There's no obligation.</p>
+                <p><strong>Will you sign an NDA?</strong> Yes, before we look at anything.</p>
+                <p><strong>Who do we contract with?</strong> HumanLayer AI Ltd, a UK registered company (no. 17023325).</p>
+            </div>
         </div>
 
         <!-- Reference builds -->
@@ -558,7 +629,7 @@
 
             <div class="experience-item">
                 <div class="job-title">Founder &amp; Cloud / AI Infrastructure Consultant</div>
-                <div class="company-info">Human Layer AI Ltd | February 2026 - Present | London, UK</div>
+                <div class="company-info">HumanLayer AI Ltd | February 2026 - Present | London, UK</div>
                 <ul class="bullet-points">
                     <li>Independent consultancy for cloud platforms, DevSecOps, SRE and AI in operations</li>
                 </ul>
