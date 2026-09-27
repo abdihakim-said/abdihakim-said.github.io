@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="Abdihakim Said · Cloud &amp; Platform Engineer">
     <meta name="twitter:description" content="Fixed-price AWS Cost &amp; Reliability and AI Spend &amp; Guardrails reviews. London, UK.">
     <meta name="twitter:image" content="https://abdihakim-said.github.io/og-image.png">
-    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://abdihakim-said.github.io/#person", "name": "Abdihakim Said", "jobTitle": "Cloud & Platform Engineer", "url": "https://abdihakim-said.github.io/", "image": "https://abdihakim-said.github.io/og-image.png", "worksFor": {"@type": "Organization", "name": "HumanLayer AI Ltd"}, "address": {"@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB"}, "hasCredential": [{"@type": "EducationalOccupationalCredential", "name": "AWS Certified Solutions Architect – Associate"}, {"@type": "EducationalOccupationalCredential", "name": "Certified Kubernetes Administrator (CKA)"}], "knowsAbout": ["AWS", "Azure", "Kubernetes", "Terraform", "DevSecOps", "Site Reliability Engineering", "FinOps", "AI guardrails"], "sameAs": ["https://www.linkedin.com/in/said-devops/", "https://github.com/abdihakim-said"]}, {"@type": "ProfessionalService", "name": "HumanLayer AI Ltd", "url": "https://abdihakim-said.github.io/#work-with-me", "founder": {"@id": "https://abdihakim-said.github.io/#person"}, "areaServed": "GB", "makesOffer": [{"@type": "Offer", "name": "AWS Cost & Reliability Review", "price": "2950", "priceCurrency": "GBP", "description": "Two-week, read-only review: cost breakdown, top 10 savings ranked by effort and risk, reliability gaps, written report."}, {"@type": "Offer", "name": "AI Spend & Guardrails Review", "price": "3450", "priceCurrency": "GBP", "description": "Two-week, read-only review of AI/LLM spend, data flows (UK GDPR view) and what agents and API keys can access."}]}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://abdihakim-said.github.io/#person", "name": "Abdihakim Said", "jobTitle": "Cloud & Platform Engineer", "url": "https://abdihakim-said.github.io/", "image": "https://abdihakim-said.github.io/og-image.png", "worksFor": {"@type": "Organization", "name": "HumanLayer AI Ltd"}, "address": {"@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB"}, "hasCredential": [{"@type": "EducationalOccupationalCredential", "name": "AWS Certified Solutions Architect – Associate"}, {"@type": "EducationalOccupationalCredential", "name": "Certified Kubernetes Administrator (CKA)"}], "knowsAbout": ["AWS", "Azure", "Kubernetes", "Terraform", "DevSecOps", "Site Reliability Engineering", "FinOps", "AI guardrails"], "sameAs": ["https://www.linkedin.com/in/said-devops/", "https://github.com/abdihakim-said"]}, {"@type": "ProfessionalService", "name": "HumanLayer AI Ltd", "url": "https://abdihakim-said.github.io/#work-with-me", "founder": {"@id": "https://abdihakim-said.github.io/#person"}, "areaServed": "GB", "makesOffer": [{"@type": "Offer", "name": "AWS Cost & Reliability Review", "price": "2950", "priceCurrency": "GBP", "description": "Two-week, read-only review: cost breakdown, top 10 savings ranked by effort and risk, reliability gaps, written report."}, {"@type": "Offer", "name": "AI Spend & Guardrails Review", "price": "3450", "priceCurrency": "GBP", "description": "Two-week, read-only review of AI/LLM spend, data flows (UK GDPR view) and what agents and API keys can access."}, {"@type": "Offer", "name": "Implementation Sprint", "price": "4950", "priceCurrency": "GBP", "description": "Two-week, fixed-price sprint after a review: AI guardrails (human approval step, least-privilege keys, LLM budgets, redaction, audit log) and AWS cost and reliability fixes in Terraform, delivered through the client's pull-request review."}]}]}</script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -528,6 +528,8 @@
         .offer-cta:hover { background: #1e3f73; }
         .offer-sub { color: #2c5aa0; margin: 28px 0 10px; font-size: 1.1rem; }
         .offer-steps { padding-left: 22px; display: grid; gap: 8px; color: #333; }
+        .offer-followon { margin-top: 20px; border-top-color: #2c7a8c; }
+        .offer-tag { font-size: 0.75rem; font-weight: 600; color: #2c7a8c; background: #e3f2f4; border-radius: 10px; padding: 2px 8px; margin-left: 6px; vertical-align: middle; white-space: nowrap; }
         .faq { display: grid; gap: 10px; color: #333; }
     </style>
 </head>
@@ -559,7 +561,7 @@
         <!-- Work With Me -->
         <div class="section" id="work-with-me">
             <h2><i class="fas fa-handshake"></i> Work With Me</h2>
-            <p>Two fixed-price reviews. Clear scope, a written report you keep, and read-only access only. I never change anything in your accounts.</p>
+            <p>Start with a fixed-price review: clear scope, a written report you keep, and read-only access only. I never change anything in your accounts during a review. If you want the fixes built, an Implementation Sprint follows. It's optional and has its own fixed price.</p>
 
             <div class="offers">
                 <div class="offer">
@@ -596,18 +598,35 @@
                 </div>
             </div>
 
+            <div class="offer offer-followon">
+                <div class="offer-head">
+                    <h3><i class="fas fa-tools"></i> Implementation Sprint <span class="offer-tag">after a review</span></h3>
+                    <div class="offer-price">£4,950 <span>fixed · 2 weeks · scoped from your report</span></div>
+                </div>
+                <p class="offer-for"><strong>For</strong> teams who've had a review and want the top fixes built, tested and handed over, rather than just a list.</p>
+                <ul class="offer-list">
+                    <li><strong>AI guardrails:</strong> a human approval step for risky agent actions (Slack or Teams), least-privilege keys and tool allow-lists, per-team LLM budgets and alerts, personal-data redaction before logging, and an audit log of every decision</li>
+                    <li><strong>AWS cost and reliability:</strong> the top savings implemented in Terraform (right-sizing, scheduling, storage tiers), backups restored and tested, and alerts that fire on user impact</li>
+                    <li>All changes go through your repos and your normal pull-request review, with tests, a runbook and a handover session</li>
+                </ul>
+                <p class="offer-proof">How I work: I fix my own findings in public. For example, an <a href="https://github.com/abdihakim-said/cloudmart-enterprise-devsecops/blob/main/backend/src/services/orderTools.js" target="_blank">AI assistant that could delete any order</a>, <a href="https://github.com/abdihakim-said/healthhub-enterprise-platform" target="_blank">APIs with no authorizer</a>, and a <a href="https://github.com/abdihakim-said/jenkins-enterprise-platform" target="_blank">~$600/month storage setting</a>. Each is written up in a "Fixed" note in the README, and the code fixes have tests.</p>
+                <a class="offer-cta" href="mailto:abdihakimsaid1@gmail.com?subject=Implementation%20Sprint">Ask about a sprint</a>
+            </div>
+
             <h3 class="offer-sub">How it works</h3>
             <ol class="offer-steps">
                 <li><strong>Free 30-minute call.</strong> We check the review fits your situation. If it doesn't, I'll say so.</li>
                 <li><strong>Scope in writing.</strong> A one-page scope and a fixed price before any work starts.</li>
                 <li><strong>Two weeks of work.</strong> Week 1: read-only access and short interviews. Week 2: analysis and report.</li>
                 <li><strong>Walkthrough and handover.</strong> You keep the report and can act on it with or without me.</li>
+                <li><strong>Optional: Implementation Sprint.</strong> If you want the fixes built, we scope a sprint from the report. Fixed price, no obligation.</li>
             </ol>
 
             <h3 class="offer-sub">Questions</h3>
             <div class="faq">
                 <p><strong>What access do you need?</strong> A read-only role. For AWS I provide the template to create it, and you can remove it the day the review ends.</p>
-                <p><strong>Can you implement the fixes?</strong> Yes, as a separate piece of work once you've seen the report. There's no obligation.</p>
+                <p><strong>Can you implement the fixes?</strong> Yes, through the Implementation Sprint: fixed price, scoped from your report, with changes going through your own pull-request review. There's no obligation, and you can hand the report to your own team instead.</p>
+                <p><strong>What access does a sprint need?</strong> Only what the agreed fixes require, scoped to named repos and environments, and removed at handover.</p>
                 <p><strong>Will you sign an NDA?</strong> Yes, before we look at anything.</p>
                 <p><strong>Who do we contract with?</strong> HumanLayer AI Ltd, a UK registered company (no. 17023325).</p>
             </div>
