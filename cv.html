@@ -243,6 +243,9 @@
         }
         
         @media print {
+            .no-print {
+                display: none;
+            }
             body {
                 padding: 10px;
             }
@@ -258,19 +261,20 @@
 <body>
     <div class="header">
         <div class="name">ABDIHAKIM SAID</div>
-        <div class="title">Cloud &amp; Platform Engineer · AWS Solutions Architect Associate · CKA</div>
+        <div class="title">Cloud &amp; Platform Engineer · AI Infrastructure &amp; FinOps · AWS SAA · CKA</div>
         <div class="contact-info">
             <span>📍 London, UK</span>
             <span>📧 <a href="mailto:abdihakimsaid1@gmail.com">abdihakimsaid1@gmail.com</a></span>
             <span>💼 <a href="https://www.linkedin.com/in/said-devops/">LinkedIn</a></span>
             <span>🌐 <a href="https://github.com/abdihakim-said">github.com/abdihakim-said</a></span>
+            <span class="no-print">📄 <a href="Abdihakim-Said-CV.pdf">Download PDF</a></span>
         </div>
     </div>
 
     <div class="section">
         <div class="section-title">Summary</div>
         <div class="summary">
-            Cloud and platform engineer with 6 years in production infrastructure, most of it in regulated healthcare. I work across <span class="highlight">AWS and Azure</span> with Terraform, Kubernetes and GitOps, DevSecOps pipelines and SRE practice (SLOs, alerting, runbooks, postmortems). Founder of HumanLayer AI Ltd, an independent cloud and AI-infrastructure consultancy.
+            Cloud and platform engineer with 6 years in production infrastructure, most of it in regulated healthcare. I build platforms on <span class="highlight">Azure and AWS</span> with infrastructure as code (Terraform), Kubernetes and GitOps, CI/CD and DevSecOps pipelines, and SRE practice (SLOs, observability, runbooks, postmortems). I specialise in cloud cost (<span class="highlight">cut AWS costs 63%</span> at Moorfields) and in running LLM features safely: least-privilege access for AI agents and tools, and deterministic checks around model output. Founder of HumanLayer AI Ltd; available for fixed-price projects and contracts through the company.
         </div>
     </div>
 
@@ -279,19 +283,27 @@
         <div class="skills-grid">
             <div class="skill-category">
                 <div class="skill-category-title">Cloud</div>
-                <div class="skill-list">AWS (EC2, EKS, Lambda, DynamoDB, S3, IAM, CloudWatch, Bedrock) · Azure (AKS, Key Vault, ACR, AI Speech) · GCP (GKE, Vision AI)</div>
+                <div class="skill-list">Azure (AKS, Key Vault, ACR, AI Speech) · AWS (EC2, EKS, Lambda, DynamoDB, S3, IAM, CloudWatch, Bedrock) · GCP (GKE, Vision AI)</div>
             </div>
             <div class="skill-category">
-                <div class="skill-category-title">Platform &amp; Delivery</div>
-                <div class="skill-list">Terraform, Packer, CloudFormation · Kubernetes, Helm, ArgoCD · GitHub Actions, Jenkins, AWS CodePipeline</div>
+                <div class="skill-category-title">IaC &amp; CI/CD</div>
+                <div class="skill-list">Terraform, Packer, CloudFormation · Kubernetes, Helm, ArgoCD (GitOps) · GitHub Actions, Jenkins, AWS CodePipeline</div>
             </div>
             <div class="skill-category">
-                <div class="skill-category-title">Security</div>
+                <div class="skill-category-title">DevSecOps</div>
                 <div class="skill-list">Trivy, tfsec, Checkov, Semgrep, Gitleaks, SBOMs · IAM least privilege, permission boundaries · GuardDuty, Security Hub</div>
             </div>
             <div class="skill-category">
-                <div class="skill-category-title">Reliability &amp; Ops</div>
-                <div class="skill-list">Prometheus, Grafana, CloudWatch, ELK · SLOs and error budgets · Windows Server, Active Directory, PowerShell, SQL</div>
+                <div class="skill-category-title">Observability &amp; SRE</div>
+                <div class="skill-list">OpenTelemetry, Prometheus, Grafana, CloudWatch, ELK, Jaeger · SLOs, error budgets, on-call, runbooks, postmortems</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">AI Infrastructure &amp; FinOps</div>
+                <div class="skill-list">LLM integration: OpenAI (tool calling), Amazon Bedrock, Azure AI · Least-privilege and ownership checks for AI agent tools · Cloud cost: right-sizing, scheduling, cost automation</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Languages &amp; Systems</div>
+                <div class="skill-list">Python, Bash, PowerShell, TypeScript/Node.js · Windows Server, Active Directory, SQL</div>
             </div>
         </div>
     </div>
@@ -302,7 +314,8 @@
         <div class="job-title">Founder &amp; Cloud / AI Infrastructure Consultant</div>
         <div class="company-info">HumanLayer AI Ltd | February 2026 - Present | London, UK</div>
         <ul class="bullet-points">
-            <li>Independent consultancy for cloud platforms, DevSecOps, SRE and AI in operations</li>
+            <li>Fixed-price AWS cost &amp; reliability reviews, AI spend &amp; guardrails reviews, and implementation sprints for UK teams</li>
+            <li>Public reference builds with documented limitations; fixes shipped with tests (Cognito JWT authorizer on 39 API routes, ownership-checked AI agent tools)</li>
         </ul>
 
         <div class="job-title">Site Reliability Engineer &amp; Cloud Infrastructure Specialist</div>
