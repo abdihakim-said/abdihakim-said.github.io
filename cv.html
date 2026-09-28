@@ -4,380 +4,303 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdihakim Said - CV</title>
-    <meta name="description" content="CV of Abdihakim Said, Cloud &amp; Platform Engineer in London: AWS, Azure, Kubernetes, Terraform, DevSecOps and SRE. AWS Solutions Architect – Associate, CKA.">
-    <link rel="canonical" href="https://abdihakim-said.github.io/cv.html">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <meta property="og:title" content="Abdihakim Said · CV">
-    <meta property="og:image" content="https://abdihakim-said.github.io/og-image.png">
+    <meta name="description" content="CV of Abdihakim Said, Cloud & Platform Engineer in London: AWS, Azure, Kubernetes, Terraform, DevSecOps, SRE, AI infrastructure and FinOps.">
     <style>
+        @page {
+            size: A4;
+            margin: 13mm 15mm;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Calibri', 'Arial', sans-serif;
-            line-height: 1.4;
-            color: #333;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.42;
+            color: #000;
+            background: #fff;
+        }
+
+        .page {
             max-width: 210mm;
             margin: 0 auto;
-            padding: 15px;
-            background: white;
+            padding: 16px 22px 28px;
         }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 25px;
-            border-bottom: 3px solid #2c5aa0;
-            padding-bottom: 15px;
-        }
-        
-        .name {
-            font-size: 32px;
-            font-weight: bold;
-            color: #2c5aa0;
-            margin-bottom: 8px;
-            letter-spacing: 1px;
-        }
-        
-        .title {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 12px;
-            font-weight: 600;
-        }
-        
-        .contact-info {
-            font-size: 11px;
-            color: #555;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .contact-info a {
-            color: #2c5aa0;
+
+        a {
+            color: #000;
             text-decoration: none;
         }
-        
-        .section {
-            margin-bottom: 22px;
+
+        .toolbar {
+            text-align: right;
+            font-size: 9pt;
+            margin-bottom: 8px;
         }
-        
-        .section-title {
-            font-size: 15px;
-            font-weight: bold;
-            color: #2c5aa0;
-            border-bottom: 2px solid #2c5aa0;
-            padding-bottom: 4px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+
+        .toolbar a {
+            border: 1px solid #000;
+            padding: 3px 10px;
         }
-        
-        .summary {
-            font-size: 11px;
-            text-align: justify;
-            margin-bottom: 18px;
-            line-height: 1.5;
-            background: #f8f9fa;
-            padding: 12px;
-            border-radius: 5px;
-            border-left: 4px solid #2c5aa0;
-        }
-        
-        .impact-banner {
-            background: linear-gradient(135deg, #2c5aa0, #3498db);
-            color: white;
-            padding: 12px;
-            border-radius: 8px;
+
+        header {
             text-align: center;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding-bottom: 8px;
+            border-bottom: 1.5px solid #000;
         }
-        
-        .achievements {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-bottom: 20px;
+
+        h1 {
+            font-size: 22pt;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
-        
-        .achievement-item {
-            font-size: 10px;
-            padding: 10px;
-            background: #f8f9fa;
-            border-left: 4px solid #2c5aa0;
-            border-radius: 5px;
-            line-height: 1.4;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+        .headline {
+            font-size: 11pt;
+            margin-top: 3px;
         }
-        
-        .job-title {
-            font-size: 13px;
-            font-weight: bold;
-            color: #2c5aa0;
-            margin-bottom: 4px;
+
+        .contact {
+            font-size: 8.8pt;
+            margin-top: 5px;
         }
-        
-        .company-info {
-            font-size: 10px;
-            color: #666;
-            margin-bottom: 10px;
-            font-style: italic;
+
+        .contact span {
+            white-space: nowrap;
         }
-        
-        .project-title {
-            font-size: 11px;
-            font-weight: bold;
-            color: #333;
-            margin: 10px 0 6px 0;
-            background: #e3f2fd;
-            padding: 6px 10px;
-            border-radius: 4px;
-            border-left: 3px solid #2c5aa0;
+
+        .contact span + span::before {
+            content: "|";
+            margin: 0 5px;
         }
-        
-        .bullet-points {
-            list-style: none;
-            padding-left: 0;
+
+        section {
+            margin-top: 12px;
         }
-        
-        .bullet-points li {
-            font-size: 10px;
-            margin-bottom: 4px;
-            padding-left: 15px;
-            position: relative;
-            line-height: 1.4;
-        }
-        
-        .bullet-points li:before {
-            content: "▶";
-            color: #2c5aa0;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-        
-        .skill-category {
-            margin-bottom: 12px;
-            background: #f8f9fa;
-            padding: 10px;
-            border-radius: 5px;
-            border-left: 3px solid #2c5aa0;
-        }
-        
-        .skill-category-title {
-            font-size: 11px;
-            font-weight: bold;
-            color: #2c5aa0;
+
+        h2 {
+            font-size: 10.5pt;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            border-bottom: 0.75px solid #000;
+            padding-bottom: 2px;
             margin-bottom: 6px;
         }
-        
-        .skill-list {
-            font-size: 9px;
-            color: #555;
-            line-height: 1.4;
+
+        p {
+            text-align: justify;
         }
-        
-        .highlight {
-            background: #fff3cd;
-            padding: 2px 4px;
-            border-radius: 3px;
-            font-weight: bold;
+
+        .skills {
+            display: grid;
+            grid-template-columns: 185px 1fr;
+            row-gap: 2px;
         }
-        
-        .metric {
-            color: #2c5aa0;
-            font-weight: bold;
+
+        .skills dt {
+            font-weight: 700;
         }
-        
-        .education-item {
-            font-size: 10px;
-            margin-bottom: 10px;
-            background: #f8f9fa;
-            padding: 8px;
-            border-radius: 4px;
+
+        .role {
+            margin-top: 9px;
+            break-inside: avoid;
         }
-        
-        .degree {
-            font-weight: bold;
-            color: #2c5aa0;
+
+        .role:first-of-type {
+            margin-top: 0;
         }
-        
-        .portfolio-section {
-            background: #f0f8ff;
-            padding: 15px;
-            border-radius: 8px;
-            border: 2px solid #e3f2fd;
-            margin-bottom: 20px;
+
+        .role-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
         }
-        
-        .portfolio-title {
-            font-size: 12px;
-            font-weight: bold;
-            color: #2c5aa0;
-            margin-bottom: 8px;
+
+        .role-title {
+            font-weight: 700;
         }
-        
-        .portfolio-item {
-            margin-bottom: 10px;
-            font-size: 9px;
-            line-height: 1.4;
+
+        .dates {
+            white-space: nowrap;
         }
-        
-        .portfolio-link {
-            color: #2c5aa0;
-            text-decoration: none;
-            font-weight: bold;
+
+        .org {
+            font-style: italic;
+            margin-bottom: 2px;
         }
-        
+
+        ul {
+            padding-left: 15px;
+        }
+
+        li {
+            margin-top: 1.5px;
+        }
+
+        .two-col {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .page {
+                padding: 12px 16px 24px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .skills dd {
+                margin-bottom: 4px;
+            }
+
+            .role-head,
+            .two-col {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .contact span + span::before {
+                content: "";
+                margin: 0;
+            }
+
+            .contact span {
+                display: block;
+            }
+        }
+
         @media print {
+            .page {
+                padding: 0;
+            }
+
             .no-print {
                 display: none;
-            }
-            body {
-                padding: 10px;
-            }
-            .achievements {
-                grid-template-columns: 1fr;
-            }
-            .skills-grid {
-                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="name">ABDIHAKIM SAID</div>
-        <div class="title">Cloud &amp; Platform Engineer · AI Infrastructure &amp; FinOps · AWS SAA · CKA</div>
-        <div class="contact-info">
-            <span>📍 London, UK</span>
-            <span>📧 <a href="mailto:abdihakimsaid1@gmail.com">abdihakimsaid1@gmail.com</a></span>
-            <span>💼 <a href="https://www.linkedin.com/in/said-devops/">LinkedIn</a></span>
-            <span>🌐 <a href="https://github.com/abdihakim-said">github.com/abdihakim-said</a></span>
-            <span class="no-print">📄 <a href="Abdihakim-Said-CV.pdf">Download PDF</a></span>
+<div class="page">
+    <div class="toolbar no-print"><a href="Abdihakim-Said-CV.pdf">Download PDF</a></div>
+
+    <header>
+        <h1>Abdihakim Said</h1>
+        <div class="headline">Cloud &amp; Platform Engineer | AI Infrastructure &amp; FinOps | AWS Solutions Architect | CKA</div>
+        <div class="contact">
+            <span>London, UK</span>
+            <span><a href="mailto:abdihakimsaid1@gmail.com">abdihakimsaid1@gmail.com</a></span>
+            <span><a href="https://www.linkedin.com/in/said-devops/">linkedin.com/in/said-devops</a></span>
+            <span><a href="https://github.com/abdihakim-said">github.com/abdihakim-said</a></span>
         </div>
-    </div>
+    </header>
 
-    <div class="section">
-        <div class="section-title">Summary</div>
-        <div class="summary">
-            Cloud and platform engineer with 6 years in production infrastructure, most of it in regulated healthcare. I build platforms on <span class="highlight">Azure and AWS</span> with infrastructure as code (Terraform), Kubernetes and GitOps, CI/CD and DevSecOps pipelines, and SRE practice (SLOs, observability, runbooks, postmortems). I specialise in cloud cost (<span class="highlight">cut AWS costs 63%</span> at Moorfields) and in running LLM features safely: least-privilege access for AI agents and tools, and deterministic checks around model output. Founder of HumanLayer AI Ltd; available for fixed-price projects and contracts through the company.
+    <section>
+        <h2>Profile</h2>
+        <p>Cloud and platform engineer with 6 years running production infrastructure on AWS and Azure, most of it in regulated healthcare. I build internal platforms with Terraform, Kubernetes and GitOps, put security gates into CI/CD, and run SRE practice: SLOs, observability, on-call and postmortems. Cut AWS costs by 63% at Moorfields Private Eye Hospital while keeping patient-facing systems at 99.95% uptime. Current focus is AI infrastructure: integrating LLM services (Amazon Bedrock, OpenAI, Azure AI) with cost controls and least-privilege guardrails.</p>
+    </section>
+
+    <section>
+        <h2>Core Skills</h2>
+        <dl class="skills">
+            <dt>Cloud</dt>
+            <dd>AWS (EKS, EC2, Lambda, IAM, S3, DynamoDB, EFS, CloudWatch, Bedrock), Azure (AKS, Key Vault, ACR, AI Services), GCP (GKE)</dd>
+            <dt>Platform &amp; IaC</dt>
+            <dd>Terraform, Packer, CloudFormation, Kubernetes, Helm, ArgoCD (GitOps), Docker</dd>
+            <dt>CI/CD &amp; DevSecOps</dt>
+            <dd>GitHub Actions, Jenkins, AWS CodePipeline; Trivy, tfsec, Checkov, Semgrep, Gitleaks, SBOMs; IAM least privilege</dd>
+            <dt>Observability &amp; SRE</dt>
+            <dd>Prometheus, Grafana, OpenTelemetry, ELK, CloudWatch; SLOs and error budgets, incident response, runbooks</dd>
+            <dt>AI Infrastructure &amp; FinOps</dt>
+            <dd>LLM integration (Amazon Bedrock, OpenAI, Azure AI), guardrails for AI agents, cloud cost optimisation</dd>
+            <dt>Languages &amp; Systems</dt>
+            <dd>Python, Bash, PowerShell, Node.js; Linux, Windows Server, Active Directory, SQL</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+
+        <div class="role">
+            <div class="role-head">
+                <span class="role-title">Founder &amp; Cloud / AI Infrastructure Consultant</span>
+                <span class="dates">Feb 2026 – Present</span>
+            </div>
+            <div class="org">HumanLayer AI Ltd, London</div>
+            <ul>
+                <li>Independent consultancy delivering AWS cost and reliability reviews, AI spend and guardrails reviews, and implementation sprints for UK engineering teams.</li>
+            </ul>
         </div>
-    </div>
 
-    <div class="section">
-        <div class="section-title">Core Technical Expertise</div>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <div class="skill-category-title">Cloud</div>
-                <div class="skill-list">Azure (AKS, Key Vault, ACR, AI Speech) · AWS (EC2, EKS, Lambda, DynamoDB, S3, IAM, CloudWatch, Bedrock) · GCP (GKE, Vision AI)</div>
+        <div class="role">
+            <div class="role-head">
+                <span class="role-title">Site Reliability Engineer &amp; Cloud Infrastructure Specialist</span>
+                <span class="dates">Mar 2022 – Present</span>
             </div>
-            <div class="skill-category">
-                <div class="skill-category-title">IaC &amp; CI/CD</div>
-                <div class="skill-list">Terraform, Packer, CloudFormation · Kubernetes, Helm, ArgoCD (GitOps) · GitHub Actions, Jenkins, AWS CodePipeline</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">DevSecOps</div>
-                <div class="skill-list">Trivy, tfsec, Checkov, Semgrep, Gitleaks, SBOMs · IAM least privilege, permission boundaries · GuardDuty, Security Hub</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">Observability &amp; SRE</div>
-                <div class="skill-list">OpenTelemetry, Prometheus, Grafana, CloudWatch, ELK, Jaeger · SLOs, error budgets, on-call, runbooks, postmortems</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">AI Infrastructure &amp; FinOps</div>
-                <div class="skill-list">LLM integration: OpenAI (tool calling), Amazon Bedrock, Azure AI · Least-privilege and ownership checks for AI agent tools · Cloud cost: right-sizing, scheduling, cost automation</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">Languages &amp; Systems</div>
-                <div class="skill-list">Python, Bash, PowerShell, TypeScript/Node.js · Windows Server, Active Directory, SQL</div>
-            </div>
+            <div class="org">Luul Solutions Ltd, London</div>
+            <ul>
+                <li>Implemented an SLA/SLO/SLI framework with automated monitoring across 15+ services.</li>
+                <li>Built a golden-image pipeline (Packer, Trivy, Amazon Inspector) and a Terraform-provisioned Jenkins platform on AWS with a disposable, EFS-backed controller and security-gated infrastructure pipelines (tfsec, Checkov, Gitleaks, approval before production).</li>
+                <li>Delivered GitOps on Azure AKS: layered Terraform, build-once images promoted by Git commit, ArgoCD, Key Vault secrets via CSI, and a Trivy image gate with SBOMs.</li>
+                <li>Ran production Kubernetes (EKS, AKS, GKE) and CI/CD with GitHub Actions and AWS CodePipeline; maintained reusable Terraform modules for AWS, Azure and GCP.</li>
+                <li>Built AI integrations with guardrails: Amazon Bedrock drafting IAM policies within permission boundaries, and serverless services orchestrating Azure AI Speech, OpenAI and Google Vision.</li>
+                <li>Built monitoring, logging and alerting (Prometheus, Grafana, CloudWatch, ELK) with on-call rotation, runbooks and postmortems.</li>
+            </ul>
         </div>
-    </div>
 
-    <div class="section">
-        <div class="section-title">Professional Experience</div>
+        <div class="role">
+            <div class="role-head">
+                <span class="role-title">Cloud Engineer &amp; Infrastructure Specialist</span>
+                <span class="dates">Feb 2021 – Mar 2022</span>
+            </div>
+            <div class="org">Moorfields Private Eye Hospital, London</div>
+            <ul>
+                <li>Reduced AWS costs by 63% through right-sizing, automation and scheduling.</li>
+                <li>Ran highly available infrastructure for patient-facing systems at 99.95% uptime.</li>
+                <li>Implemented monitoring and alerting for critical healthcare systems and took part in the on-call rotation.</li>
+                <li>Built automated backup and disaster-recovery procedures, tested regularly.</li>
+            </ul>
+        </div>
 
-        <div class="job-title">Founder &amp; Cloud / AI Infrastructure Consultant</div>
-        <div class="company-info">HumanLayer AI Ltd | February 2026 - Present | London, UK</div>
-        <ul class="bullet-points">
-            <li>Fixed-price AWS cost &amp; reliability reviews, AI spend &amp; guardrails reviews, and implementation sprints for UK teams</li>
-            <li>Public reference builds with documented limitations; fixes shipped with tests (Cognito JWT authorizer on 39 API routes, ownership-checked AI agent tools)</li>
+        <div class="role">
+            <div class="role-head">
+                <span class="role-title">System Administrator &amp; Production Support</span>
+                <span class="dates">Mar 2020 – Feb 2021</span>
+            </div>
+            <div class="org">Chelsea &amp; Westminster Hospital NHS Foundation Trust, London</div>
+            <ul>
+                <li>Administered Windows Server, Active Directory, DNS and Group Policy for 1,000+ staff.</li>
+                <li>Automated patching and maintenance with PowerShell; managed Remote Desktop Services for clinical remote access.</li>
+                <li>Maintained SQL databases for hospital systems and automated secure SFTP transfers between departments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Certified Solutions Architect – Associate</li>
+            <li>Certified Kubernetes Administrator (CKA)</li>
         </ul>
+    </section>
 
-        <div class="job-title">Site Reliability Engineer &amp; Cloud Infrastructure Specialist</div>
-        <div class="company-info">Luul Solutions Ltd | March 2022 - Present | London, UK</div>
-        <ul class="bullet-points">
-            <li>Implemented an SLA/SLO/SLI framework with automated monitoring across 15+ services</li>
-            <li>Built and maintained reusable Terraform for multi-cloud provisioning (AWS, Azure, GCP)</li>
-            <li>Ran production Kubernetes (EKS, AKS, GKE) and CI/CD with GitHub Actions and AWS CodePipeline</li>
-            <li>Built monitoring, logging and alerting (Prometheus, Grafana, CloudWatch, ELK) with on-call rotation, runbooks and postmortems</li>
-        </ul>
-
-        <div class="job-title">Cloud Engineer &amp; Infrastructure Specialist</div>
-        <div class="company-info">Moorfields Private Eye Hospital | February 2021 - March 2022 | London, UK</div>
-        <ul class="bullet-points">
-            <li>Reduced AWS costs by <span class="metric">63%</span> through right-sizing, automation and scheduling</li>
-            <li>Ran highly available infrastructure for patient-facing systems at <span class="metric">99.95%</span> uptime</li>
-            <li>Implemented monitoring and alerting for critical healthcare systems; took part in on-call rotation</li>
-            <li>Built automated backup and disaster-recovery procedures, with regular testing</li>
-        </ul>
-
-        <div class="job-title">System Administrator &amp; Production Support</div>
-        <div class="company-info">Chelsea &amp; Westminster Hospital NHS Foundation Trust | March 2020 - February 2021 | London, UK</div>
-        <ul class="bullet-points">
-            <li>Administered Windows Server, Active Directory, DNS and Group Policy for 1,000+ staff</li>
-            <li>Automated patching and maintenance with PowerShell; managed Remote Desktop Services for clinical remote access</li>
-            <li>Maintained SQL databases for hospital management systems and automated secure SFTP transfers between departments</li>
-        </ul>
-    </div>
-
-    <div class="portfolio-section">
-        <div class="section-title">Reference Builds (own accounts, not client systems)</div>
-        <div class="portfolio-item">
-            <div class="portfolio-title">Jenkins on AWS: golden-AMI factory + Terraform platform</div>
-            <a href="https://github.com/abdihakim-said/jenkins-enterprise-platform" class="portfolio-link">github.com/abdihakim-said/jenkins-enterprise-platform</a><br>
-            Packer golden AMIs with Trivy/Inspector scanning, 11 Terraform modules, EFS-backed disposable controller, security-gated infrastructure pipeline. Deployed in a dev account.
+    <section>
+        <h2>Education</h2>
+        <div class="two-col">
+            <span><strong>BSc Computer Science</strong>, University of Greenwich, London</span>
+            <span class="dates">2016 – 2019</span>
         </div>
-        <div class="portfolio-item">
-            <div class="portfolio-title">GitOps + DevSecOps platform on Azure AKS</div>
-            <a href="https://github.com/abdihakim-said/robot-shop-azure-platform" class="portfolio-link">github.com/abdihakim-said/robot-shop-azure-platform</a><br>
-            Layered Terraform, build-once/promote-by-Git, ArgoCD, Key Vault CSI, Trivy gate + SBOM, SLO alerting, around the open-source Robot Shop app.
-        </div>
-        <div class="portfolio-item">
-            <div class="portfolio-title">AI-assisted IAM provisioning (prototype)</div>
-            <a href="https://github.com/abdihakim-said/cloudmart-enterprise-iam-automation" class="portfolio-link">github.com/abdihakim-said/cloudmart-enterprise-iam-automation</a><br>
-            Amazon Bedrock drafts IAM policies; permission boundaries and MFA enforcement; roadmap for deterministic validation with IAM Access Analyzer.
-        </div>
-        <div class="portfolio-item">
-            <div class="portfolio-title">Serverless multi-cloud AI (prototype, sample data)</div>
-            <a href="https://github.com/abdihakim-said/healthhub-enterprise-platform" class="portfolio-link">github.com/abdihakim-said/healthhub-enterprise-platform</a><br>
-            7 Lambda services orchestrating Azure Speech, OpenAI and Google Vision with Polly/Translate.
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Education &amp; Certifications</div>
-        <div class="education-item">
-            <div class="degree">BSc Computer Science</div>
-            <div style="font-size: 9px; color: #666; margin-top: 3px;">University of Greenwich, London, UK | 2016-2019</div>
-        </div>
-        <div style="font-size: 10px; margin-top: 12px; background: #f0f8ff; padding: 8px; border-radius: 4px;">
-            <strong>Certifications:</strong> AWS Certified Solutions Architect – Associate · Certified Kubernetes Administrator (CKA)
-        </div>
-    </div>
+    </section>
+</div>
 </body>
 </html>
