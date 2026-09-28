@@ -594,7 +594,7 @@
                         <li><strong>How you'll see it:</strong> an observability plan with cost and latency per call (OpenTelemetry) and budget alerts</li>
                         <li>Written report, prioritised fixes, 60-minute walkthrough and a follow-up call after 30 days</li>
                     </ul>
-                    <p class="offer-proof">Approach: LLMs can draft; deterministic controls decide. See my <a href="https://github.com/abdihakim-said/cloudmart-enterprise-iam-automation" target="_blank">AI-assisted IAM prototype</a>.</p>
+                    <p class="offer-proof">Approach: LLMs can draft; deterministic controls decide. See my <a href="https://github.com/abdihakim-said/cloudmart-enterprise-iam-automation" target="_blank">AI-assisted IAM work</a>.</p>
                     <a class="offer-cta" href="mailto:abdihakimsaid1@gmail.com?subject=AI%20Spend%20%26%20Guardrails%20Review">Book a free 30-minute call</a>
                 </div>
             </div>
@@ -633,35 +633,6 @@
             </div>
         </div>
 
-        <!-- Reference builds -->
-        <div class="section">
-            <h2><i class="fas fa-code-branch"></i> Reference Builds</h2>
-            <p>These are platforms I designed, deployed and debugged in my own cloud accounts, so you can read the code before we talk. They are not client systems. Each README covers the architecture, the trade-offs I made, the known limitations, and what it costs to run.</p>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <h3><i class="fas fa-industry"></i> Jenkins on AWS</h3>
-                    <p>Packer golden-AMI factory with Trivy/Inspector scanning, Terraform (11 modules), EFS-backed disposable controller, security-gated infrastructure pipeline.</p>
-                    <a href="https://github.com/abdihakim-said/jenkins-enterprise-platform" target="_blank" class="demo-link"><i class="fab fa-github"></i> Source</a>
-                </div>
-                <div class="achievement-card">
-                    <h3><i class="fas fa-dharmachakra"></i> GitOps on Azure AKS</h3>
-                    <p>Layered Terraform, build-once/promote-by-Git, ArgoCD, Key Vault CSI, Trivy gate + SBOM, SLO alerting, plus write-ups of the real problems I hit.</p>
-                    <a href="https://hakimdevops.art" target="_blank" class="demo-link"><i class="fas fa-external-link-alt"></i> Live dev</a>
-                    <a href="https://github.com/abdihakim-said/robot-shop-azure-platform" target="_blank" class="demo-link"><i class="fab fa-github"></i> Source</a>
-                </div>
-                <div class="achievement-card">
-                    <h3><i class="fas fa-user-shield"></i> AI-Assisted IAM (prototype)</h3>
-                    <p>Amazon Bedrock drafts IAM policies from plain-English requests. The design question is how to let an LLM draft access without letting it grant access.</p>
-                    <a href="https://github.com/abdihakim-said/cloudmart-enterprise-iam-automation" target="_blank" class="demo-link"><i class="fab fa-github"></i> Source</a>
-                </div>
-                <div class="achievement-card">
-                    <h3><i class="fas fa-heartbeat"></i> Serverless Multi-Cloud AI (prototype)</h3>
-                    <p>7 Lambda services orchestrating Azure Speech, OpenAI and Google Vision with Polly/Translate. Sample data only; the README lists what production would need.</p>
-                    <a href="https://github.com/abdihakim-said/healthhub-enterprise-platform" target="_blank" class="demo-link"><i class="fab fa-github"></i> Source</a>
-                </div>
-            </div>
-        </div>
-
         <!-- Professional Experience -->
         <div class="section">
             <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
@@ -670,7 +641,7 @@
                 <div class="job-title">Founder &amp; Cloud / AI Infrastructure Consultant</div>
                 <div class="company-info">HumanLayer AI Ltd | February 2026 - Present | London, UK</div>
                 <ul class="bullet-points">
-                    <li>Independent consultancy for cloud platforms, DevSecOps, SRE and AI in operations</li>
+                    <li>Independent consultancy delivering AWS cost and reliability reviews, AI spend and guardrails reviews, and implementation sprints for UK engineering teams</li>
                 </ul>
             </div>
 
@@ -679,8 +650,10 @@
                 <div class="company-info">Luul Solutions Ltd | March 2022 - Present | London, UK</div>
                 <ul class="bullet-points">
                     <li>Implemented an SLA/SLO/SLI framework with automated monitoring across 15+ services</li>
-                    <li>Built and maintained reusable Terraform for multi-cloud provisioning (AWS, Azure, GCP)</li>
-                    <li>Ran production Kubernetes (EKS, AKS, GKE) and CI/CD with GitHub Actions and AWS CodePipeline</li>
+                    <li>Built a golden-image pipeline (Packer, Trivy, Amazon Inspector) and a Terraform-provisioned Jenkins platform on AWS with a disposable, EFS-backed controller and security-gated infrastructure pipelines</li>
+                    <li>Delivered GitOps on Azure AKS: layered Terraform, build-once images promoted by Git commit, ArgoCD, Key Vault secrets via CSI, and a Trivy image gate with SBOMs</li>
+                    <li>Ran production Kubernetes (EKS, AKS, GKE) and CI/CD with GitHub Actions and AWS CodePipeline; maintained reusable Terraform modules for AWS, Azure and GCP</li>
+                    <li>Built AI integrations with guardrails: Amazon Bedrock drafting IAM policies within permission boundaries, and serverless services orchestrating Azure AI Speech, OpenAI and Google Vision</li>
                     <li>Built monitoring, logging and alerting (Prometheus, Grafana, CloudWatch, ELK) with on-call rotation and postmortems</li>
                 </ul>
             </div>
@@ -703,6 +676,35 @@
                     <li>Automated patching and maintenance with PowerShell; managed RDS for clinical remote access</li>
                     <li>Maintained SQL databases and secure SFTP transfers between hospital departments</li>
                 </ul>
+            </div>
+        </div>
+
+        <!-- Selected platform work -->
+        <div class="section">
+            <h2><i class="fas fa-code-branch"></i> Selected Platform Work</h2>
+            <p>Platforms I have designed and delivered. The code is published in anonymised form, with employer and client details removed.</p>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3><i class="fas fa-industry"></i> Golden-Image CI/CD Platform on AWS</h3>
+                    <p>Packer golden AMIs with Trivy and Amazon Inspector scanning, Terraform (11 modules), a disposable EFS-backed Jenkins controller, and a security-gated infrastructure pipeline with approval before production.</p>
+                    <a href="https://github.com/abdihakim-said/jenkins-enterprise-platform" target="_blank" class="demo-link"><i class="fab fa-github"></i> Architecture &amp; code</a>
+                </div>
+                <div class="achievement-card">
+                    <h3><i class="fas fa-dharmachakra"></i> GitOps &amp; DevSecOps on Azure AKS</h3>
+                    <p>Layered Terraform, build-once images promoted by Git commit, ArgoCD, Key Vault secrets via CSI, a Trivy image gate with SBOMs, and SLO alerting.</p>
+                    <a href="https://hakimdevops.art" target="_blank" class="demo-link"><i class="fas fa-external-link-alt"></i> Live demo</a>
+                    <a href="https://github.com/abdihakim-said/robot-shop-azure-platform" target="_blank" class="demo-link"><i class="fab fa-github"></i> Architecture &amp; code</a>
+                </div>
+                <div class="achievement-card">
+                    <h3><i class="fas fa-user-shield"></i> AI-Assisted IAM with Guardrails</h3>
+                    <p>Amazon Bedrock drafts least-privilege IAM policies from plain-English requests; permission boundaries and deterministic checks decide what is actually granted.</p>
+                    <a href="https://github.com/abdihakim-said/cloudmart-enterprise-iam-automation" target="_blank" class="demo-link"><i class="fab fa-github"></i> Architecture &amp; code</a>
+                </div>
+                <div class="achievement-card">
+                    <h3><i class="fas fa-heartbeat"></i> Serverless Multi-Cloud AI Integration</h3>
+                    <p>AWS Lambda services orchestrating Azure AI Speech, OpenAI and Google Vision, with Cognito authentication on every API route and Terraform-managed infrastructure.</p>
+                    <a href="https://github.com/abdihakim-said/healthhub-enterprise-platform" target="_blank" class="demo-link"><i class="fab fa-github"></i> Architecture &amp; code</a>
+                </div>
             </div>
         </div>
 
