@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HumanLayer Transport · SEN &amp; social care transport for London councils</title>
+<meta name="description" content="HumanLayer Transport, from HumanLayer AI Ltd: a London private hire service we are launching for council SEN and social care routes, run on our own compliance and dispatch platform. Every driver document checked by a person; every journey in the TfL booking register.">
+<link rel="canonical" href="https://humanlayer.uk/transport.html">
+<meta name="theme-color" content="#0B0B0C">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HumanLayer AI">
+<meta property="og:title" content="HumanLayer Transport · SEN &amp; social care transport, London">
+<meta property="og:description" content="Council transport run on software that checks every driver, prices every route transparently and keeps an audit-ready TfL booking register. Pre-launch in London.">
+<meta property="og:url" content="https://humanlayer.uk/transport.html">
+<meta property="og:image" content="https://humanlayer.uk/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "HumanLayer Transport", "serviceType": "Special educational needs (SEN) and social care passenger transport", "url": "https://humanlayer.uk/transport.html", "areaServed": {"@type": "City", "name": "London"}, "provider": {"@type": "Organization", "name": "HumanLayer AI Ltd", "url": "https://humanlayer.uk/", "logo": "https://humanlayer.uk/apple-touch-icon.png", "address": {"@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ink: #0B0B0C; --ink-2: #16181B; --ink-line: #26292E;
+  --paper: #FFFFFF; --wash: #F4F5F6; --text: #15171A; --muted: #5C636B; --line: #E1E4E8;
+  --on-ink: #F2F3F4; --on-ink-muted: #9AA1A9;
+  --accent: #E8590C; --accent-text: #C2410C; --accent-soft: #FFF1E7;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --wrap: 1120px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { font: 17px/1.6 var(--sans); color: var(--text); background: var(--paper); -webkit-font-smoothing: antialiased; }
+a { color: var(--accent-text); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding-inline: 24px; }
+.eyebrow { font: 500 13px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent-text); }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; letter-spacing: -0.015em; }
+h2 { font-size: clamp(30px, 3.6vw, 42px); line-height: 1.1; font-weight: 700; }
+h3 { font-size: 21px; line-height: 1.25; font-weight: 700; }
+section { padding-block: 88px; }
+.section-head { display: grid; gap: 12px; max-width: 760px; margin-bottom: 44px; }
+.section-head p { color: var(--muted); font-size: 18px; }
+
+/* Nav (same as the main site) */
+.nav { position: sticky; top: 0; z-index: 10; background: rgba(11,11,12,.92); backdrop-filter: saturate(160%) blur(10px); border-bottom: 1px solid var(--ink-line); }
+.nav .wrap { display: flex; align-items: center; gap: 28px; height: 64px; }
+.brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font: 700 19px var(--display); letter-spacing: -0.01em; white-space: nowrap; }
+.brand svg { width: 30px; height: 30px; }
+.brand b { color: var(--accent); font-weight: 700; }
+.nav-links { display: flex; gap: 24px; margin-left: auto; }
+.nav-links a { color: var(--on-ink-muted); text-decoration: none; font-size: 15px; }
+.nav-links a:hover, .nav-links a[aria-current] { color: #fff; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font: 600 15px var(--sans); text-decoration: none; border-radius: 6px; padding: 12px 20px; border: 1px solid transparent; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+.btn-accent { background: var(--accent); color: #fff; }
+.btn-accent:hover { background: #CF4E0A; }
+.btn-ghost { color: var(--on-ink); border-color: #3A3F46; }
+.btn-ghost:hover { border-color: var(--on-ink); }
+.nav .btn { padding: 9px 16px; font-size: 14px; }
+
+/* Hero */
+.hero { background: var(--ink); color: var(--on-ink); padding-block: 96px 0; position: relative; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(#141416 1px, transparent 1px), linear-gradient(90deg, #141416 1px, transparent 1px); background-size: 44px 44px; mask-image: linear-gradient(90deg, transparent 20%, #000 75%); pointer-events: none; }
+.hero .wrap { position: relative; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(36px, 5vw, 60px); line-height: 1.05; font-weight: 800; color: #fff; margin-block: 18px 22px; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero .lede { font-size: 19px; color: var(--on-ink-muted); max-width: 40em; }
+.hero .lede strong { color: var(--on-ink); font-weight: 500; }
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.status { display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; font: 500 13px/1.4 var(--mono); color: var(--on-ink-muted); border: 1px solid var(--ink-line); border-radius: 999px; padding: 8px 14px; }
+.status i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(232,89,12,.18); flex: none; }
+
+/* Journey card in the hero: a real day's run, as the platform records it */
+.run { background: var(--ink-2); border: 1px solid var(--ink-line); border-radius: 10px; padding: 22px; display: grid; gap: 14px; font-size: 14px; }
+.run-head { display: flex; justify-content: space-between; gap: 12px; font: 500 12px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--on-ink-muted); }
+.run ol { list-style: none; display: grid; gap: 12px; }
+.run li { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 12px; align-items: baseline; }
+.run time { font: 500 13px var(--mono); color: var(--on-ink-muted); font-variant-numeric: tabular-nums; }
+.run li span { color: var(--on-ink); }
+.run li small { display: block; color: var(--on-ink-muted); font-size: 13px; }
+.run .ok { color: #7BD389; font-weight: 600; }
+.run-foot { border-top: 1px solid var(--ink-line); padding-top: 12px; color: var(--on-ink-muted); font-size: 13px; }
+
+.proof { position: relative; margin-top: 80px; border-top: 1px solid var(--ink-line); }
+.proof .wrap { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; }
+.stat { padding: 28px 24px 32px 0; }
+.stat + .stat { padding-left: 24px; border-left: 1px solid var(--ink-line); }
+.stat .num { font: 700 34px/1.1 var(--display); color: #fff; font-variant-numeric: tabular-nums; }
+.stat .num small { font-size: 20px; color: var(--accent); }
+.stat .label { font-size: 14px; color: var(--on-ink-muted); margin-top: 6px; }
+
+/* For councils */
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.card { border: 1px solid var(--line); border-radius: 10px; padding: 28px; display: grid; gap: 10px; align-content: start; }
+.card p { color: var(--muted); font-size: 16px; }
+.card .k { font: 500 12px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--accent-text); }
+
+/* How it works */
+#how { background: var(--wash); border-block: 1px solid var(--line); }
+.flow { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; counter-reset: s; }
+.flow li { counter-increment: s; position: relative; padding: 24px 20px 24px 0; display: grid; gap: 8px; align-content: start; }
+.flow li + li { padding-left: 20px; border-left: 1px solid var(--line); }
+.flow li::before { content: counter(s); font: 600 14px/32px var(--mono); text-align: center; width: 34px; height: 34px; border: 1px solid var(--text); border-radius: 50%; }
+.flow li.person::before { background: var(--accent); border-color: var(--accent); color: #fff; }
+.flow h3 { font-size: 17px; }
+.flow p { color: var(--muted); font-size: 15px; }
+.flow-key { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; font-size: 14px; color: var(--muted); }
+.flow-key span { display: inline-flex; align-items: center; gap: 8px; }
+.flow-key i { width: 14px; height: 14px; border-radius: 50%; border: 1px solid var(--text); display: inline-block; }
+.flow-key i.p { background: var(--accent); border-color: var(--accent); }
+
+/* Compliance */
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: start; }
+.checks { list-style: none; display: grid; gap: 14px; }
+.checks li { position: relative; padding-left: 28px; }
+.checks li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 12px; height: 7px; border-left: 2px solid var(--accent); border-bottom: 2px solid var(--accent); transform: rotate(-45deg) translateY(-50%); }
+.checks strong { font-weight: 600; }
+.docs { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.docs table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.docs th, .docs td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.docs th { font: 500 12px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--wash); }
+.docs tr:last-child td { border-bottom: 0; }
+.docs td:first-child { font-weight: 600; white-space: nowrap; }
+.docs td:last-child { color: var(--muted); }
+
+/* Built with */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.tag { font: 500 13px var(--mono); color: var(--muted); background: var(--wash); border: 1px solid var(--line); border-radius: 4px; padding: 3px 10px; }
+.stack { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin-top: 8px; }
+.stack h3 { font-size: 17px; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 2px solid var(--text); }
+.stack p { font-size: 15px; color: var(--muted); }
+
+/* Contact */
+.contact { background: var(--ink); color: var(--on-ink); }
+.contact .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 64px; }
+.contact h2 { color: #fff; margin-top: 12px; }
+.contact .lede { color: var(--on-ink-muted); margin-top: 16px; font-size: 18px; }
+.contact .lede a { color: var(--on-ink); }
+form { display: grid; gap: 16px; background: var(--ink-2); border: 1px solid var(--ink-line); border-radius: 10px; padding: 28px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+label { display: grid; gap: 6px; font-size: 14px; color: var(--on-ink-muted); }
+input, textarea, select { font: 16px var(--sans); color: #fff; background: var(--ink); border: 1px solid #3A3F46; border-radius: 6px; padding: 12px 14px; width: 100%; }
+input:focus, textarea:focus, select:focus { border-color: var(--accent); outline: none; }
+textarea { resize: vertical; min-height: 120px; }
+form .btn { justify-self: start; }
+footer { background: var(--ink); color: var(--on-ink-muted); border-top: 1px solid var(--ink-line); padding-block: 36px; font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between; }
+footer a { color: var(--on-ink-muted); }
+
+@media (max-width: 960px) {
+  .hero .wrap, .contact .wrap, .split { grid-template-columns: minmax(0, 1fr); }
+  .proof .wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; }
+  .stat, .stat + .stat { padding: 24px 0; border-left: 0; border-top: 1px solid var(--ink-line); }
+  .stat:nth-child(-n+2) { border-top: 0; }
+  .cards, .stack { grid-template-columns: minmax(0, 1fr); }
+  .flow { grid-template-columns: minmax(0, 1fr); }
+  .flow li, .flow li + li { padding: 18px 0; border-left: 0; border-top: 1px solid var(--line); }
+  .flow li:first-child { border-top: 0; }
+  .nav-links { display: none; }
+  .nav .btn { margin-left: auto; }
+}
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  section { padding-block: 64px; }
+  .wrap { padding-inline: 18px; }
+  .hero { padding-top: 64px; }
+  .row { grid-template-columns: minmax(0, 1fr); }
+  .stat .num { font-size: 26px; }
+  .proof { margin-top: 56px; }
+  .docs td:first-child { white-space: normal; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="https://humanlayer.uk/" aria-label="HumanLayer AI, home"><svg viewBox="70 58 260 244" aria-hidden="true"><polygon points="80,216 200,276 200,292 80,232" fill="#23272C"/><polygon points="320,216 200,276 200,292 320,232" fill="#2C3137"/><polygon points="200,156 320,216 200,276 80,216" fill="#3A3F46"/><polygon points="80,172 200,232 200,248 80,188" fill="#5C636B"/><polygon points="320,172 200,232 200,248 320,188" fill="#6E757D"/><polygon points="200,112 320,172 200,232 80,172" fill="#8B9097"/><polygon points="80,128 200,188 200,204 80,144" fill="#B8480A"/><polygon points="320,128 200,188 200,204 320,144" fill="#D9540A"/><polygon points="200,68 320,128 200,188 80,128" fill="#F76707"/></svg><span>HumanLayer <b>AI</b></span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#councils">For councils</a>
+      <a href="#how">How it works</a>
+      <a href="#compliance">Compliance</a>
+      <a href="https://humanlayer.uk/">Consultancy</a>
+    </nav>
+    <a class="btn btn-accent" href="#contact">Talk to us</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">HumanLayer Transport · SEN &amp; social care</p>
+      <h1 id="hero-title">School transport where every driver is checked and <em>every journey is on the record</em>.</h1>
+      <p class="lede">A London private hire service we are launching for <strong>council SEN and social care routes</strong>, run on our own platform: drivers' documents are verified by a person before they can work, every route is priced openly, and every journey is written to the <strong>TfL booking register</strong> before the car leaves.</p>
+      <div class="ctas">
+        <a class="btn btn-accent" href="#contact">Talk to us about a route</a>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
+      </div>
+      <p class="status"><i aria-hidden="true"></i>Pre-launch · platform built · not yet taking bookings</p>
+    </div>
+    <figure class="run" aria-label="Example of one morning run as the platform records it">
+      <div class="run-head"><span>Route example · AM run</span><span>WAV</span></div>
+      <ol>
+        <li><time>06:00</time><span>Daily compliance check<small>badge, Enhanced DBS, V5C and insurance all in date</small></span></li>
+        <li><time>07:05</time><span>Dispatched by a named dispatcher<small>driver re-checked at the moment of sending: <b class="ok">eligible</b></small></span></li>
+        <li><time>07:05</time><span>TfL register entry written<small>one per passenger: driver, licence, vehicle, times</small></span></li>
+        <li><time>07:30</time><span>Pick-up<small>2 passengers, 1 wheelchair user</small></span></li>
+        <li><time>08:20</time><span>Arrived at school · run completed<small>billed on the monthly invoice against the council's PO</small></span></li>
+      </ol>
+      <p class="run-foot">Illustrative example of what the platform records. Not a live route.</p>
+    </figure>
+  </div>
+  <div class="proof">
+    <div class="wrap">
+      <div class="stat"><div class="num">4</div><div class="label">driver documents verified by a person before any work is offered</div></div>
+      <div class="stat"><div class="num">06:00</div><div class="label">daily check; expired documents suspend a driver automatically</div></div>
+      <div class="stat"><div class="num">12 <small>months</small></div><div class="label">TfL booking register kept, exportable for inspection</div></div>
+      <div class="stat"><div class="num">0</div><div class="label">bids submitted without a named person's approval</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="councils" aria-labelledby="councils-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">For councils and schools</p>
+      <h2 id="councils-title">What a transport officer gets from us</h2>
+      <p>We are building the operator we would want to hand a route to: fewer phone calls, no missing paperwork, and a clear answer when you ask who drove which child and when.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <span class="k">Safeguarding</span>
+        <h3>Checked drivers, every day</h3>
+        <p>Each driver's TfL badge, Enhanced DBS, V5C and hire &amp; reward insurance are read and then verified by a person. A driver whose document expires is taken off work automatically at the next 06:00 check.</p>
+      </article>
+      <article class="card">
+        <span class="k">Records</span>
+        <h3>Audit-ready from day one</h3>
+        <p>Every journey is written to the TfL booking register before it starts, with the driver, their licence, the vehicle and who dispatched it. You can have the export for any period.</p>
+      </article>
+      <article class="card">
+        <span class="k">Pricing</span>
+        <h3>A clear daily rate</h3>
+        <p>One daily price per route, ex-VAT, with any passenger assistant shown as its own line. Monthly invoices list every run against your purchase order, and late cancellations are shown separately.</p>
+      </article>
+      <article class="card">
+        <span class="k">Vehicles</span>
+        <h3>Saloons, MPVs and WAVs</h3>
+        <p>Wheelchair-accessible vehicles for routes that need them, matched to each route's passengers and needs.</p>
+      </article>
+      <article class="card">
+        <span class="k">People</span>
+        <h3>A person makes the decisions</h3>
+        <p>Software handles the checks and the paperwork. A named person approves every bid, verifies every document and dispatches every run, and those decisions are logged.</p>
+      </article>
+      <article class="card">
+        <span class="k">Coverage</span>
+        <h3>Based in Battersea</h3>
+        <p>Starting with boroughs near our Battersea base in south-west London. Tell us about routes elsewhere in London and we'll say honestly whether we can cover them well.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2 id="how-title">From a route alert to a completed run</h2>
+      <p>The platform does the repetitive work. The steps in orange always need a person.</p>
+    </div>
+    <ol class="flow">
+      <li><h3>Route received</h3><p>From the council's portal or e-mail alert. Pick-ups, school, vehicle and times are read and checked against the original text.</p></li>
+      <li><h3>Priced openly</h3><p>Route distance is measured for the morning and afternoon runs; the daily price covers the driver, the vehicle and our costs.</p></li>
+      <li class="person"><h3>Approved by a person</h3><p>Nothing is submitted to a council until a named person approves the bid.</p></li>
+      <li class="person"><h3>Dispatched with checks</h3><p>The driver's documents are re-checked at the moment of dispatch and the TfL register entry is written.</p></li>
+      <li><h3>Invoiced and reconciled</h3><p>Monthly invoices against your PO; drivers are paid weekly; every run is billed once and paid once.</p></li>
+    </ol>
+    <div class="flow-key" aria-hidden="true"><span><i></i>Automatic</span><span><i class="p"></i>A person decides</span></div>
+  </div>
+</section>
+
+<section id="compliance" aria-labelledby="compliance-title">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Compliance and data</p>
+      <h2 id="compliance-title" style="margin-block: 12px 20px">Built for regulated passenger transport</h2>
+      <ul class="checks">
+        <li><strong>TfL private hire operator rules:</strong> booking records kept for at least 12 months, with the driver, their licence number, the vehicle and its licence number, and who took and dispatched each booking.</li>
+        <li><strong>UK GDPR by design:</strong> we keep what the law requires and delete the rest. Photos of driver documents aren't stored, only the details we check.</li>
+        <li><strong>DBS code of practice:</strong> certificate details are recorded; copies of certificates are not kept.</li>
+        <li><strong>Suspensions that stick:</strong> a driver suspended for a safeguarding concern can only be reinstated by a person, and every change is in an audit history.</li>
+        <li><strong>Hosted in the UK:</strong> passenger and driver data stays in a London data centre.</li>
+      </ul>
+    </div>
+    <div class="docs">
+      <table>
+        <caption class="eyebrow" style="text-align:left; padding: 14px 16px 0">Checked for every driver</caption>
+        <thead><tr><th scope="col">Document</th><th scope="col">What we check</th></tr></thead>
+        <tbody>
+          <tr><td>TfL PHV driver licence</td><td>Licence number, name matches the driver, in date</td></tr>
+          <tr><td>Enhanced DBS</td><td>Enhanced level, issue date within our re-check period</td></tr>
+          <tr><td>V5C logbook</td><td>Registration matches the driver's vehicle and keeper</td></tr>
+          <tr><td>Hire &amp; reward insurance</td><td>Covers private hire, vehicle matches, in date</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="platform" aria-labelledby="platform-title" style="background: var(--wash); border-top: 1px solid var(--line)">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The platform</p>
+      <h2 id="platform-title">Our own software, built in-house</h2>
+      <p>HumanLayer Transport runs on a platform we designed and built ourselves, drawing on production experience in regulated healthcare infrastructure.</p>
+    </div>
+    <div class="stack">
+      <div><h3>Compliance engine</h3><p>Reads driver documents with AI, then routes every reading to a person for verification. Daily expiry checks, SMS and email reminders, automatic suspension.</p></div>
+      <div><h3>Bidding and dispatch</h3><p>Finds council route opportunities, measures routes, prices them with a fixed margin floor and sends each bid for human approval. Dispatch writes the TfL register.</p></div>
+      <div><h3>Finance</h3><p>Weekly self-billed driver remittances, monthly council invoices ready for accounting software, and reconciliation of every run.</p></div>
+    </div>
+    <div class="tags" aria-label="Technology">
+      <span class="tag">Python · FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Claude (document reading)</span><span class="tag">Google Maps Routes</span><span class="tag">Docker · CI/CD</span><span class="tag">UK hosting</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Get in touch</p>
+      <h2 id="contact-title">Tell us about your routes</h2>
+      <p class="lede">We're preparing to launch and aren't taking bookings yet, but we would like to hear from council transport teams, schools and drivers across London. Email <a href="mailto:abdihakimsaid1@gmail.com">abdihakimsaid1@gmail.com</a> or use the form.</p>
+    </div>
+    <form class="contact-form" action="https://formspree.io/f/xpwagqko" method="POST">
+      <input type="hidden" name="_subject" value="HumanLayer Transport enquiry">
+      <input type="hidden" name="enquiry" value="transport">
+      <div class="row">
+        <label for="name">Name<input type="text" id="name" name="name" autocomplete="name" required></label>
+        <label for="email">Email<input type="email" id="email" name="email" autocomplete="email" required></label>
+      </div>
+      <div class="row">
+        <label for="organisation">Council or organisation<input type="text" id="organisation" name="organisation" autocomplete="organization"></label>
+        <label for="role">I am<select id="role" name="role"><option>Council transport officer</option><option>School or college</option><option>Driver or passenger assistant</option><option>Other</option></select></label>
+      </div>
+      <label for="message">Message<textarea id="message" name="message" rows="5" placeholder="Routes, vehicle needs, boroughs, timescales…" required></textarea></label>
+      <button type="submit" class="btn btn-accent submit-btn">Send message</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="https://humanlayer.uk/" aria-label="HumanLayer AI, home"><svg viewBox="70 58 260 244" aria-hidden="true"><polygon points="80,216 200,276 200,292 80,232" fill="#23272C"/><polygon points="320,216 200,276 200,292 320,232" fill="#2C3137"/><polygon points="200,156 320,216 200,276 80,216" fill="#3A3F46"/><polygon points="80,172 200,232 200,248 80,188" fill="#5C636B"/><polygon points="320,172 200,232 200,248 320,188" fill="#6E757D"/><polygon points="200,112 320,172 200,232 80,172" fill="#8B9097"/><polygon points="80,128 200,188 200,204 80,144" fill="#B8480A"/><polygon points="320,128 200,188 200,204 320,144" fill="#D9540A"/><polygon points="200,68 320,128 200,188 80,128" fill="#F76707"/></svg><span>HumanLayer <b>AI</b></span></a>
+    <p>HumanLayer AI Ltd · Registered in England and Wales, no. 17023325 · London, UK</p>
+    <p><a href="https://humanlayer.uk/">Consultancy</a> · <a href="https://www.linkedin.com/company/humanlayer-ai-uk/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script>
+  document.querySelector('.contact-form').addEventListener('submit', function () {
+    var b = this.querySelector('.submit-btn');
+    b.textContent = 'Sending…';
+    b.disabled = true;
+  });
+</script>
+</body>
+</html>
