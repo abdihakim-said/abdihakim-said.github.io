@@ -247,9 +247,11 @@
             </div>
             <div class="org">HumanLayer AI Ltd, London</div>
             <ul>
-                <li>Independent consultancy delivering AWS cost and reliability reviews, AI spend and guardrails reviews, and implementation sprints for UK engineering teams.</li>
+                <li>Independent consultancy offering AWS cost and reliability reviews, AI spend and guardrails reviews, and implementation sprints for UK engineering teams.</li>
                 <li>Open-sourced an AWS FinOps tool (Python, Terraform) that turns waste into an approval plan: gp2-to-gp3 migration with IOPS parity, safe snapshot clean-up, Compute Optimizer rightsizing, and read-only versus least-privilege apply roles.</li>
                 <li>Open-sourced an LLM guardrails gateway (Python): per-team budgets enforced before each model call, cost per call, redaction of personal data, tool allow-lists, human approval for risky agent actions and a tamper-evident audit log.</li>
+                <li>Built a multi-agent banking assistant (Python, Claude, MCP): PII redacted before the model, agents limited to MCP tool servers, customer confirmation before any action, cost and trace per turn, and an evaluation suite in CI.</li>
+                <li>Built an LLM pilot-to-production platform on private GKE (London): vLLM serving with RAG and PII redaction, Argo CD GitOps, Argo Rollouts canaries gated by an evaluation suite and Prometheus error rate, and MLflow 3 tracing.</li>
             </ul>
         </div>
 

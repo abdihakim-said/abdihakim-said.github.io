@@ -299,6 +299,29 @@ footer a { color: var(--on-ink-muted); }
       </article>
     </div>
 
+    <h3 class="subhead">AI infrastructure reference builds</h3>
+    <p class="subnote">Built by HumanLayer AI Ltd to show how an LLM gets from pilot to production safely. Synthetic data, results measured on the build itself.</p>
+    <div class="oss">
+      <article class="oss-card">
+        <div class="shot"><img src="assets/banking-agent-demo.gif" alt="Terminal demo: balance and transaction search, a dispute that waits for the customer to reply YES, a stolen-card replacement that needs a one-time code, a prompt-injection attempt refused, and a request for financial advice redirected to MoneyHelper" width="1000" height="560" loading="lazy"></div>
+        <div class="body">
+          <h3>Multi-agent banking assistant</h3>
+          <p>Customer PII is redacted before any model sees it, agents reach backend systems only through MCP tool servers, and the model can propose an action but the customer must confirm it. Cost and trace on every turn, an evaluation suite in CI, and model fallback when a provider fails.</p>
+          <div class="tags"><span class="tag">Claude</span><span class="tag">MCP</span><span class="tag">Python</span><span class="tag">Kubernetes</span></div>
+          <div class="links"><a href="https://github.com/abdihakim-said/uk-banking-agent-platform" target="_blank" rel="noopener">Code, tests and demo &rarr;</a></div>
+        </div>
+      </article>
+      <article class="oss-card">
+        <div class="shot" style="background:#fff"><img src="assets/llm-pilot-architecture.png" alt="Architecture: Argo CD syncs a private GKE platform; assistant-api releases as an Argo Rollouts canary that only promotes when the evaluation suite and error-rate gate pass; vLLM serves the model; MLflow records traces" loading="lazy" style="object-fit:contain;object-position:center"></div>
+        <div class="body">
+          <h3>LLM pilot to production on GKE</h3>
+          <p>A UK bank's GenAI assistant stuck in pilot, taken to production: private GKE in London, self-hosted vLLM serving with RAG and PII redaction, MLflow traces and Grafana dashboards, and canary releases that only promote when the evaluation suite passes.</p>
+          <div class="tags"><span class="tag">GKE</span><span class="tag">vLLM</span><span class="tag">Argo CD &amp; Rollouts</span><span class="tag">MLflow</span></div>
+          <div class="links"><a href="https://github.com/abdihakim-said/llm-pilot-to-production" target="_blank" rel="noopener">Architecture &amp; code &rarr;</a></div>
+        </div>
+      </article>
+    </div>
+
     <h3 class="subhead">Selected platform work</h3>
     <p class="subnote">Platforms I have designed and delivered. The code is published in anonymised form, with employer and client details removed.</p>
     <div class="platforms">
@@ -409,8 +432,9 @@ footer a { color: var(--on-ink-muted); }
       <article class="job">
         <div class="when"><strong>HumanLayer AI Ltd</strong>Feb 2026 – Present<br>London, UK</div>
         <div><h3>Founder &amp; Cloud / AI Infrastructure Consultant</h3>
-          <ul><li>Independent consultancy delivering AWS cost and reliability reviews, AI spend and guardrails reviews, and implementation sprints for UK engineering teams</li>
-          <li>Open-sourced an AWS FinOps tool and an LLM guardrails gateway (see Open source, above)</li></ul></div>
+          <ul><li>Independent consultancy offering AWS cost and reliability reviews, AI spend and guardrails reviews, and implementation sprints for UK engineering teams</li>
+          <li>Open-sourced an AWS FinOps tool and an LLM guardrails gateway (see Open source, above)</li>
+          <li>Built two AI infrastructure reference builds: a multi-agent banking assistant and an LLM pilot-to-production platform on GKE</li></ul></div>
       </article>
       <article class="job">
         <div class="when"><strong>Luul Solutions Ltd</strong>Aug 2022 – Present<br>London, UK</div>
