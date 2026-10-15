@@ -227,7 +227,7 @@
             <dt>Platform &amp; IaC</dt>
             <dd>Terraform, Packer, CloudFormation, Kubernetes, Helm, ArgoCD (GitOps), Docker</dd>
             <dt>CI/CD &amp; DevSecOps</dt>
-            <dd>GitHub Actions, Azure DevOps Pipelines, Jenkins, AWS CodePipeline; Trivy, tfsec, Checkov, Semgrep, Gitleaks, SBOMs; IAM least privilege</dd>
+            <dd>GitHub Actions, Jenkins, AWS CodePipeline; Trivy, tfsec, Checkov, Semgrep, Gitleaks, SBOMs; IAM least privilege</dd>
             <dt>Observability &amp; SRE</dt>
             <dd>Prometheus, Grafana, OpenTelemetry, ELK, CloudWatch; SLOs and error budgets, incident response, runbooks</dd>
             <dt>AI Infrastructure &amp; FinOps</dt>
@@ -265,7 +265,6 @@
                 <li>Implemented an SLA/SLO/SLI framework with automated monitoring across 15+ services.</li>
                 <li>Built a golden-image pipeline (Packer, Trivy, Amazon Inspector) and a Terraform-provisioned Jenkins platform on AWS with a disposable, EFS-backed controller and security-gated infrastructure pipelines (tfsec, Checkov, Gitleaks, approval before production).</li>
                 <li>Delivered GitOps on Azure AKS: layered Terraform, build-once images promoted by Git commit, ArgoCD, Key Vault secrets via CSI, and a Trivy image gate with SBOMs.</li>
-                <li>Added an Azure DevOps pipeline for the AKS platform (Terraform validate, Helm lint, Checkov results in the Tests tab, then plan and approval-gated apply through workload identity federation), and cleared a 100-finding Checkov backlog that had blocked the infrastructure pipeline: 55 fixed in Terraform, 44 accepted with documented reasons.</li>
                 <li>Ran production Kubernetes (EKS, AKS, GKE) and CI/CD with GitHub Actions and AWS CodePipeline; maintained reusable Terraform modules for AWS, Azure and GCP.</li>
                 <li>Built AI integrations with guardrails: Amazon Bedrock drafting IAM policies within permission boundaries, and serverless services orchestrating Azure AI Speech, OpenAI and Google Vision.</li>
                 <li>Built monitoring, logging and alerting (Prometheus, Grafana, CloudWatch, ELK) with on-call rotation, runbooks and postmortems.</li>
